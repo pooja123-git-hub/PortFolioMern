@@ -6,28 +6,33 @@ const path = require("path");
 dotenv.config();
 const app = express();
 
+// Middlewares
 app.use(cors());
 app.use(express.json());
 
-// Routes
+// Routes (API)
 const portfolioRoutes = require("./routes/portfolioRoute");
 app.use("/api/v1/portfolio", portfolioRoutes);
 
-// Static files (Vite build)
+// Serve React build (Vite generates "dist")
 const __dirname1 = path.resolve();
-app.use(express.static(path.join(__dirname1, "myPortfolio", "dist")));
+const buildPath = path.join(__dirname1, "myPortfolio", "dist");
+app.use(express.static(buildPath));
 
-// Root route
-app.get("/", (req, res) => {
-  res.send("✅ Backend + React App Running");
+// API test route
+app.get("/api", (req, res) => {
+  res.json({
+    message: "✅ Backend API Running"
+  });
 });
 
-// Catch-all for React Router
+// Catch-all route → React Router handle
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname1, "myPortfolio", "dist", "index.html"));
+  res.sendFile(path.join(buildPath, "index.html"));
 });
 
+// Start Server
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
-  console.log(`✅ Server Running on PORT ${PORT}`);
+  console.log(`✅ Server running on port ${PORT}`);
 });
