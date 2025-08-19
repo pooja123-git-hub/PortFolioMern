@@ -7,56 +7,58 @@ import { SiMongodb } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { TbFileTypeSql } from "react-icons/tb";
 import { IoLogoGithub } from "react-icons/io5";
-export const TechStackList=[
-    {
-        _id:1,
-        name:'HTML',
-        icon: TiHtml5
-    },
-     {
-        _id:2,
-        name:'CSS',
-        icon: BiSolidFileCss
-    }, {
-        _id:3,
-        name:'JavaScript',
-        icon: RiJavascriptFill
-    }, {
-        _id:4,
-        name:'Node.Js',
-        icon: FaNode 
-    },
-     {
-        _id:5,
-        name:'Node.Js',
-        icon: FaNode 
-    }
-    , {
-        _id:6,
-        name:'Express.Js',
-        icon: SiExpress 
-    },
-     {
-        _id:7,
-        name:'MongoDb',
-        icon: SiMongodb 
+import { SiTailwindcss } from "react-icons/si";
+export const TechStackList = [
+  {
+    _id: 1,
+    name: "HTML",
+    icon: TiHtml5,
+  },
+  {
+    _id: 2,
+    name: "CSS",
+    icon: BiSolidFileCss,
+  },
+  {
+    _id: 3,
+    name: "JavaScript",
+    icon: RiJavascriptFill,
+  },
+  {
+    _id: 4,
+    name: "Node.Js",
+    icon: FaNode,
+  },
 
-    },
-     {
-        _id:8,
-        name:'React',
-        icon: FaReact  
-    },
-     {
-        _id:9,
-        name:'SQL',
-        icon:TbFileTypeSql 
-    },
-     {
-        _id:11,
-        name:'Git/GitHub',
-        icon: IoLogoGithub
-    },
-    
-
-]
+  ,
+  {
+    _id: 5,
+    name: "Express.Js",
+    icon: SiExpress,
+  },
+  {
+    _id: 6,
+    name: "MongoDb",
+    icon: SiMongodb,
+  },
+  {
+    _id: 7,
+    name: "React",
+    icon: FaReact,
+  },
+  {
+    _id: 8,
+    name: "SQL",
+    icon: TbFileTypeSql,
+  },
+  {
+    _id: 9,
+    name: "Git/GitHub",
+    icon: IoLogoGithub,
+  },
+  {
+    _id: 10,
+    name: "Tailwind CSS",
+    icon: SiTailwindcss,
+  },
+];

@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./project.css";
 import { motion } from "framer-motion";
-
+import img from "../../../assets/backgroundImage.png";
 const Projects = () => {
   return (
     <Container className="projects" id="project">
@@ -16,10 +16,11 @@ const Projects = () => {
         whileInView={{ scale: [1, 1.1, 0.95, 1.05, 1] }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
       >
-        👉Here are my top 3 recent projects with live links and source code
+        👉Here are my top 4 recent projects with live links and source code
       </motion.p>
+
       <Row className="gx-4 gy-4">
-        {/* 1. Full Stack App */}
+        {/* 1. Mern Stack App */}
         <Col md={4}>
           <motion.div
             className="project-card card h-100 rounded"
@@ -28,9 +29,9 @@ const Projects = () => {
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
             <div className="card-image">
-              <span className="card-notify-badge">Full Stack App</span>
+              <span className="card-notify-badge">Mern Stack App</span>
               <img
-                src="https://www.esdesignbarcelona.com/sites/default/files/img/6_pasos_para_crear_un_portfolio_digital_y_todo_lo_que_debe_incluir_2.png"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxqgQjnHMP4lhGetdbNGByFKaNnZzixe39uLeXh-t4R2N2k4tEYUWXfDa0LXI_vuC4cyM&usqp=CAU"
                 alt="project1"
               />
             </div>
@@ -43,11 +44,49 @@ const Projects = () => {
               </div>
               <div className="card-body text-center">
                 <div className="ad-title">
+                  <h5 className="text-uppercase">
+                    Movie Ticket Booking Website
+                  </h5>
+                </div>
+                <a
+                  className="ad-btn"
+                  href="https://app-movie-ticket.vercel.app/"
+                >
+                  View
+                </a>
+              </div>
+            </div>
+          </motion.div>
+        </Col>
+        {/* 1. Full Stack App */}
+        <Col md={4}>
+          <motion.div
+            className="project-card card h-100 rounded"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
+            <div className="card-image">
+              <span className="card-notify-badge">Full Stack App</span>
+              <img
+                src="https://www.esdesignbarcelona.com/sites/default/files/img/6_pasos_para_crear_un_portfolio_digital_y_todo_lo_que_debe_incluir_2.png"
+                alt="project2"
+              />
+            </div>
+            <div>
+              <div className="card-image-overly">
+                <span className="card-detail-badges">Express.Js</span>
+                <span className="card-detail-badges">React</span>
+                <span className="card-detail-badges">Node.js</span>
+                <span className="card-detail-badges">NodeMailer</span>
+              </div>
+              <div className="card-body text-center">
+                <div className="ad-title">
                   <h5 className="text-uppercase">Portfolio Website</h5>
                 </div>
                 <a
                   className="ad-btn"
-                  href="https://github.com/pooja123-git-hub/PortFolioMern"
+                  href="https://appportfoliomern.onrender.com/"
                 >
                   View
                 </a>
@@ -80,7 +119,7 @@ const Projects = () => {
               </div>
               <div className="card-body text-center">
                 <div className="ad-title">
-                  <h5 className="text-uppercase">E-commerce</h5>
+                  <h5 className="text-uppercase">E-commerce App</h5>
                 </div>
                 <a
                   className="ad-btn"
