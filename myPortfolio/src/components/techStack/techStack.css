@@ -1,0 +1,65 @@
+.techstack {
+  margin: 50px auto;
+  max-width: 1100px; 
+
+  padding: 50px 100px 30px 100px; /* top, right, bottom, left */
+}
+
+.techstack hr {
+  color: #138781;
+  width: 400px;
+  margin: 10px auto;
+}
+
+.techstack h2 {
+  font-weight: bold;
+  color: #138781;
+  text-align: center;
+  margin-bottom: 8px; /* reduce space below heading */
+}
+
+.techstack .para {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 0;       /* remove default spacing */
+  margin-bottom: 10px; /* optional: adjust spacing below if needed */
+}
+
+.tech-card {
+  cursor: pointer;
+  padding: 0%;
+  background-color: #f2f2f2;
+}
+
+.tech-card .tech-icon {
+  font-size: 2rem;
+  margin-right: 10px;
+  background-color: #f2f2f2;
+
+}
+
+.tech-card .card:hover {
+  background-color: #138781;
+  color: white;
+  border: none;
+  transition: 1s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+              rgba(0, 0, 0, 0.12) 0px -12px 30px,
+              rgba(0, 0, 0, 0.12) 0px 4px 6px,
+              rgba(0, 0, 0, 0.17) 0px 12px 13px,
+              rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+/* mobile */
+@media (max-width) {
+  .techstack{
+  padding: 0;
+  margin: 0;
+  margin-top: 50px;
+
+  }
+  
+  .techstack h1{
+    font-size: 20px;
+  }
+}

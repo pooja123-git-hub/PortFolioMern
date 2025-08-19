@@ -1,0 +1,18 @@
+.footer {
+  background-color: #000;      /* Pure black */
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+   font-size: 23px;
+  width: 100%;
+  color: white;
+}
+
+.footer-text {
+  color: #fff;
+ 
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+}

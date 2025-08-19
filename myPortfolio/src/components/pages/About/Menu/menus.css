@@ -1,0 +1,31 @@
+.navbar-profile-pic{
+    border-radius: 90px;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    vertical-align: middle;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.nav-item{
+    color: white;
+    margin-top: 30px;
+    /* text-align: center; */
+    margin-left: 24px;
+}
+.nav-link{
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.nav-link svg {
+  margin-right: 10px;
+  font-size: 24px; /* or use 2rem, 30px, etc. */
+  width: 30px;
+  height: 30px;
+}
+
+.nav-link:hover{
+    
+    color: orange;
+}
