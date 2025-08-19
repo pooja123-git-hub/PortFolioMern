@@ -1,7 +1,7 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const cors = require('cors');
-const path=require('path');
+const path = require('path');
 // Load environment variables from .env
 dotenv.config();
 
@@ -15,6 +15,9 @@ app.use(express.json());
 // Routes
 const portfolioRoutes = require('./routes/portfolioRoute');
 app.use('/api/v1/portfolio', portfolioRoutes);
+app.get('/', (req, res) => {
+  res.send("Radhey")
+})
 // app.get('*',function(req,res){
 //   res.sendFile(path.join(__dirname,'./myPortfolio/dist/index.html'))
 // })
